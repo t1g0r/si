@@ -11,6 +11,8 @@ public class ActivitySegitiga extends AppCompatActivity {
     Button buttonHitung;
     EditText edAlas;
     EditText edTinggi;
+    EditText edHasilLuas;
+    EditText edHasilKeliling;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,16 +22,17 @@ public class ActivitySegitiga extends AppCompatActivity {
         buttonHitung    = (Button) findViewById(R.id.btnHitung);
         edAlas          = (EditText) findViewById(R.id.edAlas);
         edTinggi        = (EditText) findViewById(R.id.edTinggi);
+        edHasilLuas     = (EditText) findViewById(R.id.edHasilLuas);
+        edHasilKeliling = (EditText) findViewById(R.id.edHasilKeliling);
 
-        buttonHitung.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Segitiga segitiga = new Segitiga();
+        buttonHitung.setOnClickListener((v) -> {
+            Segitiga segitiga = new Segitiga();
 
-                segitiga.setAlas(Integer.parseInt(edAlas.getText().toString()));
-                segitiga.setTinggi(Integer.parseInt(edTinggi.getText().toString()));
-                Toast.makeText(getApplicationContext(),"Luasnya : " + Double.toString(segitiga.HitungLuas()), Toast.LENGTH_LONG).show();
-            }
+            segitiga.setAlas(Integer.parseInt(edAlas.getText().toString()));
+            segitiga.setTinggi(Integer.parseInt(edTinggi.getText().toString()));
+            edHasilLuas.setText(Double.toString(segitiga.HitungLuas()));
+            edHasilKeliling.setText(Double.toString(segitiga.HitungKeliling()));
         });
+
     }
 }
