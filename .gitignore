@@ -12,6 +12,7 @@
 bin/
 gen/
 out/
+Private_/
 
 # Gradle files
 .gradle/
