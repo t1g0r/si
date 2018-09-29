@@ -1,1 +1,1 @@
-# Dosen : Gembit Soultan
+# Dosen : Gembit Soultan. S, STP., M.Kom
