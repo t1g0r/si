@@ -29,12 +29,14 @@
             android:id="@+id/btnSegitiga"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="SEGITIGA" />
+            android:text="SEGITIGA"
+            android:onClick="ButtonSegitigaClick"/>
 
         <Button
             android:id="@+id/btnPrisma"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="PRISMA" />
+            android:text="PRISMA"
+            android:onClick="ButtonPrismaClick"/>
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
