@@ -1,21 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ActivitySegitiga">
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".ActivityPrisma">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:text="Segitiga" />
+
 
     <LinearLayout
-        android:layout_width="368dp"
-        android:layout_height="495dp"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="8dp">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
         <TextView
             android:id="@+id/textView2"
-            android:layout_width="match_parent"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:text="Alas" />
 
@@ -25,26 +34,45 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="number"
+            android:layout_marginRight="30dp"
             android:layout_marginBottom="50dp"/>
+    </LinearLayout>
 
-        <TextView
-            android:id="@+id/textView4"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Tinggi Segitiga" />
+            android:orientation="horizontal">
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Tinggi" />
 
         <EditText
             android:id="@+id/edTinggiSegitiga"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="50dp"
+            android:layout_marginRight="30dp"
             android:ems="10"
             android:inputType="number" />
-
+    </LinearLayout>
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/textView2"
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:text="Prisma" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:text="Tinggi Prisma" />
 
@@ -52,8 +80,10 @@
             android:id="@+id/edTinggiPrisma"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
             android:ems="10"
             android:inputType="number" />
+    </LinearLayout>
         <Button
             android:id="@+id/btnHitung"
             android:layout_width="match_parent"
@@ -67,20 +97,38 @@
 
             <TextView
                 android:id="@+id/textView4"
-                android:layout_width="wrap_content"
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:text="Volume Prisma"
-                android:layout_marginRight="10dp"/>
+                android:text="Luas Segitiga"/>
+
+            <EditText
+                android:id="@+id/edLuasSegitiga"
+                android:layout_width="match_parent"
+                android:layout_marginRight="30dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:enabled="false"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Volume Prisma"/>
 
             <EditText
                 android:id="@+id/edHasilVolume"
-                android:layout_width="wrap_content"
-                android:width="50dp"
+                android:layout_width="match_parent"
+                android:layout_marginRight="30dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="number"
                 android:enabled="false"/>
         </LinearLayout>
 
-    </LinearLayout>
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>

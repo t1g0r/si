@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
 
 public class ActivityPrisma extends AppCompatActivity {
 
@@ -14,6 +13,7 @@ public class ActivityPrisma extends AppCompatActivity {
     EditText edTinggiSegitiga;
     EditText edTinggiPrisma;
     EditText edHasilVolume;
+    EditText edLuasSegitiga;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,13 +26,17 @@ public class ActivityPrisma extends AppCompatActivity {
         edTinggiSegitiga    = (EditText) findViewById(R.id.edTinggiSegitiga);
         edTinggiPrisma      = (EditText) findViewById(R.id.edTinggiPrisma);
         edHasilVolume       = (EditText) findViewById(R.id.edHasilVolume);
+        edLuasSegitiga      = (EditText) findViewById(R.id.edLuasSegitiga);
 
         buttonHitung.setOnClickListener((View v) -> {
-            Prisma prisma = new Prisma();
+            PrismaSegitiga prisma = new PrismaSegitiga();
 
-            prisma.setAlas(Integer.parseInt(edAlas.getText().toString()));
+            prisma.getSegitiga().setAlas(Integer.parseInt(edAlas.getText().toString()));
+            prisma.getSegitiga().setTinggi(Integer.parseInt(edTinggiSegitiga.getText().toString()));
+
             prisma.setTinggiPrisma(Integer.parseInt(edTinggiPrisma.getText().toString()));
-            prisma.setTinggiSegitiga(Integer.parseInt(edTinggiSegitiga.getText().toString()));
+
+            edLuasSegitiga.setText(Double.toString(prisma.getSegitiga().HitungLuas()));
             edHasilVolume.setText(Double.toString(prisma.HitungVolume()));
         });
 
