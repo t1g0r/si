@@ -35,7 +35,8 @@
             android:ems="10"
             android:inputType="number"
             android:layout_marginRight="30dp"
-            android:layout_marginBottom="50dp"/>
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/edittext_background"/>
     </LinearLayout>
 
         <LinearLayout
@@ -55,7 +56,8 @@
             android:layout_marginBottom="50dp"
             android:layout_marginRight="30dp"
             android:ems="10"
-            android:inputType="number" />
+            android:inputType="number"
+            android:background="@drawable/edittext_background"/>
     </LinearLayout>
 
         <TextView
@@ -82,7 +84,8 @@
             android:layout_height="wrap_content"
             android:layout_marginRight="30dp"
             android:ems="10"
-            android:inputType="number" />
+            android:inputType="number"
+            android:background="@drawable/edittext_background"/>
     </LinearLayout>
         <Button
             android:id="@+id/btnHitung"
