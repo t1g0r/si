@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">UTS_41818110087</string>
+    <string name="appSilinder_Label">BANGUN SILINDER</string>
+    <string name="appSuhu_Label">KONVERSI SUHU</string>
+    <string name="btnSilinder">Hitung Silinder</string>
+    <string name="btnSuhu">Konversi Suhu</string>
+    <string name="JariJariSilinder_Label">A :</string>
+    <string name="TinggiSilinder_Label">B :</string>
+    <string name="LingkaranCat_Label">Hasil Lingkaran</string>
+    <string name="SilinderCat_Label">Hasil Silinder</string>
+    <string name="SilinderLuas">Luas</string>
+    <string name="SilinderKeliling">Keliling</string>
+    <string name="SilinderVolume">Volume</string>
+    <string name="ZeroLabel">0</string>
+    <string name="EqualLabel">=</string>
+
+    <string-array name="temperatureSpin">
+        <item></item>
+        <item>Celcius</item>
+        <item>Fahrenheit</item>
+        <item>Kelvin</item>
+    </string-array>
+</resources>

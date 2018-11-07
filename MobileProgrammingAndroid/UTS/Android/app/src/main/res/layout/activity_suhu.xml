@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SuhuActivity">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="@string/appSuhu_Label" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        tools:context=".SuhuActivity">
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/edFrom"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:ems="10"
+                    android:textAlignment="center"
+                    android:inputType="number"
+                    android:background="@drawable/edittext_square"
+                    android:text="@string/ZeroLabel" />
+
+                <Spinner
+                    android:id="@+id/spinFrom"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:entries="@array/temperatureSpin"
+                    android:textAlignment="center"
+                    android:background="@drawable/spin_square"></Spinner>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/EqualLabel"
+                android:textSize="40sp"
+                android:padding="10dp"
+                />
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/edTo"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:ems="10"
+                    android:textAlignment="center"
+                    android:inputType="number"
+                    android:background="@drawable/edittext_square"
+                    android:text="@string/ZeroLabel" />
+                <Spinner
+                    android:id="@+id/spinTo"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:entries="@array/temperatureSpin"
+                    android:textAlignment="center"
+                    android:background="@drawable/spin_square"></Spinner>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
