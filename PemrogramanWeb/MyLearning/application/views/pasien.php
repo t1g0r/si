@@ -7,9 +7,7 @@
 <div class="box box-success">
 	<div class="box-header">
 		<div class="btn-group">
-			<button type="button" class="btn btn-primary btn-sm"><i class="fa fa-refresh fa-lg"></i>Refresh</button>
 			<button type="button" class="btn btn-primary btn-sm"><i class="fa fa-refresh fa-lg"></i>Add Data</button>
-			<button type="button" class="btn btn-danger btn-sm"><i class="fa fa-refresh fa-lg"></i>Delete Selected</button>
 		</div>
 	</div>
 
