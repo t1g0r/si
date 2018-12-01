@@ -17,6 +17,7 @@
 				<tr>
 					<th>ID</th>
 					<th width="200">Nama Pasien</th>
+					<th>Jenis Kelamin</th>
 					<th>Alamat</th>
 					<th>Keterangan</th>
 					<th width="125">Aksi</th>
@@ -28,6 +29,7 @@
 						echo "
 								<td>".$data['kode']."</td>
 								<td>".$data['nama']."</td>
+								<td>".($data['sex']=="1"?"Laki-Laki":"Perempuan")."</td>
 								<td>".$data['alamat']."</td>
 								<td>".$data["keterangan"]."</td>
 								<td>
