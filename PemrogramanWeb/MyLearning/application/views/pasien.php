@@ -9,6 +9,7 @@
 		<div class="btn-group">
 			<button type="button" class="btn btn-primary btn-sm"><i class="fa fa-refresh fa-lg"></i>Refresh</button>
 			<button type="button" class="btn btn-primary btn-sm"><i class="fa fa-refresh fa-lg"></i>Add Data</button>
+			<button type="button" class="btn btn-danger btn-sm"><i class="fa fa-refresh fa-lg"></i>Delete Selected</button>
 		</div>
 	</div>
 
@@ -19,11 +20,26 @@
 					<th>ID</th>
 					<th width="200">Nama Pasien</th>
 					<th>Alamat</th>
-					<th width="50">Keterangan</th>
-					<th width="100">Aksi</th>
+					<th>Keterangan</th>
+					<th width="125">Aksi</th>
 				</tr>
 			</thead>
 			<tbody>
+				<?php
+					foreach($table as $data){
+						echo "
+								<td>".$data['kode']."</td>
+								<td>".$data['nama']."</td>
+								<td>".$data['alamat']."</td>
+								<td>".$data["keterangan"]."</td>
+								<td>
+									<a class='btn btn-default'>Edit</a>
+									<a class='btn btn-default'>Hapus</a>
+					             </td>
+							</tr>
+						";
+					}
+				?>
 				
 			</tbody id="checkboxlist">
 

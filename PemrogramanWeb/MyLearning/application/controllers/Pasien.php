@@ -8,9 +8,11 @@
 	{
 		
 		function index(){
-			$data["vPages"] = "pasien";
-			$data["title"] = "Pasien";
-			$data["description"] = "Data Pasien";
+			$this->load->model("MPasien");
+			$data["table"]			= $this->MPasien->getAllData();
+			$data["vPages"] 		= "pasien";
+			$data["title"]			= "Pasien";
+			$data["description"] 	= "Data Pasien";
 			$this->load->view('home',$data);
 		}
 	}
